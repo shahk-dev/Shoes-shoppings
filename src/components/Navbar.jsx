@@ -14,7 +14,8 @@ function Navbar() {
           <button>
             <img src={cater} alt="Logo link" />
           </button>
-          <ul className=" gap-13 flex item-center">
+          <div className='hidden md:block'>
+               <ul className=" gap-13 flex item-center ">
             <li>
               <NavLink
                 to="/newarrival"
@@ -65,8 +66,9 @@ function Navbar() {
             </li>
           </ul>
 
+          </div>
         </div>
-        <div>
+        <div className='hidden sm:block'>
           <a href="/">
             <img src={Logo} alt="Like logo" />
           </a>
